@@ -3,151 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Saya - Single Page</title>
-    <style>
-        /* Gaya Dasar */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #1e1e1e; /* Warna gelap sesuai gambar */
-            color: #d4d4d4;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 800px;
-            background-color: #ffffff;
-            padding: 40px;
-            margin: 50px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            border-radius: 8px;
-        }
-
-        /* Header / Nama */
-        header {
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: #ffffff;
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        .job-title {
-            color: #4ec9b0; /* Warna hijau khas editor */
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 5px;
-        }
-
-        /* Kontak */
-        .contact-info {
-            margin-top: 15px;
-            font-size: 0.9em;
-            color: #aaaaaa;
-        }
-
-        /* Section */
-        section {
-            margin-top: 30px;
-        }
-
-        h2 {
-            color: #6a9955; /* Warna hijau komentar/heading */
-            border-bottom: 1px solid #3e3e42;
-            padding-bottom: 5px;
-            font-size: 1.5em;
-        }
-
-        .experience-item, .education-item {
-            margin-bottom: 20px;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            color: #ce9178; /* Warna oranye kecokelatan */
-        }
-
-        .item-details {
-            font-style: italic;
-            font-size: 0.9em;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin-top: 5px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        /* Skills */
-        .skills-list {
-            color: #dcdcdc;
-            font-weight: 500;
-        }
-    </style>
+    <title>Resume Saya</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>Nama Anda</h1>
-        <div class="job-title">Junior Frontend Developer</div>
-        <div class="contact-info">
-            123 Nama Jalan, Kota Anda, 12345 <br>
-            (021) 456-7890 | email.anda@example.com
-        </div>
-    </header>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <div class="item-header">
-                <span>Nama Universitas / Sekolah</span>
-                <span>20xx - 20xx</span>
+    <div class="resume-container">
+        <header>
+            <hr class="top-line">
+            <h1>Nama Anda</h1>
+            <p class="job-title">Junior Frontend Developer</p>
+            
+            <div class="contact-info">
+                <p>123 Nama Jalan</p>
+                <p>Kota Anda, ST 12345</p>
+                <p>(123) 456-7890</p>
+                <p>no_reply@example.com</p>
             </div>
-            <div class="item-details">Gelar Sarjana / Jurusan</div>
-            <ul>
-                <li>Pencapaian akademik atau organisasi.</li>
-                <li>Daftar prestasi yang relevan.</li>
-            </ul>
-        </div>
-    </section>
+        </header>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <div class="item-header">
-                <span>Nama Perusahaan / Lokasi</span>
-                <span>Bulan 20xx - Sekarang</span>
+        <section>
+            <h2>Skills</h2>
+            <p>HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design, Technical Writing, Presentation</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <h3>Nama Sekolah, Lokasi - Gelar</h3>
+                <p class="date">Bulan 20xx s/d Bulan 20xx</p>
+                <p>Daftar hal-hal menarik yang Anda lakukan di universitas</p>
             </div>
-            <div class="item-details">Job Title (Contoh: Web Developer Inter)</div>
-            <ul>
-                <li>Membangun antarmuka pengguna menggunakan HTML, CSS, dan JavaScript.</li>
-                <li>Bekerja sama dengan tim desain untuk implementasi UI/UX.</li>
-                <li>Skills: HTML, CSS, JavaScript, React.</li>
-            </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p class="skills-list">
-            <strong>Technical:</strong> HTML5, CSS3, JavaScript (ES6+), Bootstrap, Git, Responsive Design. <br>
-            <strong>Soft Skills:</strong> Problem Solving, Teamwork, Time Management.
-        </p>
-    </section>
-</div>
+        <section>
+            <h2>Experience</h2>
+            <div class="entry">
+                <h3>Nama Perusahaan, Lokasi - Jabatan</h3>
+                <p class="date">Bulan 20xx s/d Bulan 20xx</p>
+                <ul>
+                    <li>Daftar pencapaian Anda</li>
+                    <li>Daftar pencapaian Anda</li>
+                    <li>Daftar pencapaian Anda</li>
+                </ul>
+                <p><strong>Skills:</strong> Daftar skill yang digunakan atau didapat di perusahaan ini</p>
+            </div>
+
+            <div class="entry">
+                <h3>Nama Perusahaan, Lokasi - Jabatan</h3>
+                <p class="date">Bulan 20xx s/d Bulan 20xx</p>
+                <ul>
+                    <li>Daftar pencapaian Anda</li>
+                    <li>Daftar pencapaian Anda</li>
+                    <li>Daftar pencapaian Anda</li>
+                </ul>
+                <p><strong>Skills:</strong> Daftar skill yang digunakan atau didapat di perusahaan ini</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Across the Internet</h2>
+            <p>Tambahkan link profil LinkedIn dan GitHub Anda</p>
+        </section>
+    </div>
 
 </body>
 </html>
